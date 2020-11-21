@@ -4,7 +4,8 @@ like public server see https://tmate.io
 
 ### create keys for your server
 
-/tmate-ssh-server# ./create_keys.sh 
+checkout https://github.com/tmate-io/tmate-ssh-server
+run ./tmate-ssh-server/create_keys.sh 
 copy keys to ./DOCKER/keys
 create folder for your sessions
 mkdir ./DOCKER/sessions
@@ -12,6 +13,11 @@ mkdir ./DOCKER/sessions
 save values you need for your .tmate.conf
 
 ### launch server
+build all docker images
+./DOCKER/postgres/build.sh
+./DOCKER/ssh-server/build.sh
+./DOCKER/tmate-master/build.sh
+./DOCKER/tmate-websocket/build.sh
 install tmux
 execute
 ./run_tmate_server.sh
