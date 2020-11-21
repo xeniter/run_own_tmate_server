@@ -1,18 +1,21 @@
 # run_own_tmate_server
+
 Run a own tmate server with docker containers
+
 like public server see https://tmate.io
 
 ### create keys for your server
-
+```
 checkout https://github.com/tmate-io/tmate-ssh-server
 run ./tmate-ssh-server/create_keys.sh 
 copy keys to ./DOCKER/keys
 create folder for your sessions
 mkdir ./DOCKER/sessions
-
 save values you need for your .tmate.conf
+```
 
 ### launch server
+
 ```
 build all docker images
 ./DOCKER/postgres/build.sh
@@ -42,7 +45,9 @@ SELECT * FROM USERS;
 ### run tmate on your client as server in background
 
 install at least tmate version 2.4 for named sessions
+
 if your distro hasn't packed this version yet, you can download also static binaries from:
+
 https://github.com/tmate-io/tmate/releases/tag/2.4.0
 
 copy your .tmate.conf you get this values when creating keys for your server
