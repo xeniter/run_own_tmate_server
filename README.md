@@ -13,6 +13,7 @@ mkdir ./DOCKER/sessions
 save values you need for your .tmate.conf
 
 ### launch server
+```
 build all docker images
 ./DOCKER/postgres/build.sh
 ./DOCKER/ssh-server/build.sh
@@ -22,6 +23,7 @@ install tmux
 execute
 ./run_tmate_server.sh
 this will start 4 docker images for your tmate server
+```
 
 ### create user with api key on server
 ```
