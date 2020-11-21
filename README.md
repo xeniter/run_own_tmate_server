@@ -5,7 +5,9 @@ like public server see https://tmate.io
 ### create keys for your server
 
 /tmate-ssh-server# ./create_keys.sh 
-copy keys to ./keys
+copy keys to ./DOCKER/keys
+create folder for your sessions
+mkdir ./DOCKER/sessions
 
 save values you need for your .tmate.conf
 
