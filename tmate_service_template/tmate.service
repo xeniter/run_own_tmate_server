@@ -1,0 +1,11 @@
+[Unit]
+Description=Starts a tmate session
+#ConditionPathExists=|/data/.dev_mode_enabled
+
+[Service]
+ExecStart=/usr/bin/start_tmate.sh
+Type=simple
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
