@@ -32,6 +32,8 @@ SELECT * FROM USERS;
 ### run tmate on your client as server in background
 
 install at least tmate version 2.4 for named sessions
+if your distro hasn't packed this version yet, you can download also static binaries from:
+https://github.com/tmate-io/tmate/releases/tag/2.4.0
 
 copy your .tmate.conf you get this values when creating keys for your server
 
